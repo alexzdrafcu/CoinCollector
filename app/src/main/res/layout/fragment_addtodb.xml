@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".ui.coins.CoinPageFragment">
+
+
+        <TextView
+            android:id="@+id/adddb_add_title_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="35dp"
+            android:layout_marginBottom="15dp"
+            android:text="@string/title_add_wallet"
+            android:textSize="38sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/adddb_add_coin_title_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/adddb_add_title_textview"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:text="@string/coins_name_title"
+            android:textStyle="bold"
+            android:textSize="21sp"/>
+
+        <EditText
+            android:id="@+id/adddb_add_title_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="50dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="@string/coin_hint"
+            android:layout_below="@+id/adddb_add_coin_title_textview"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/adddb_add_coin_material_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/adddb_add_title_edittext"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:text="@string/coins_material_title"
+            android:textStyle="bold"
+            android:textSize="21sp"/>
+
+        <EditText
+            android:id="@+id/adddb_add_material_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="50dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="@string/material_hint"
+            android:layout_below="@+id/adddb_add_coin_material_textview"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/adddb_add_coin_diameter_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/adddb_add_material_edittext"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:text="@string/coins_diameter_title"
+            android:textStyle="bold"
+            android:textSize="21sp"/>
+
+        <EditText
+            android:id="@+id/adddb_add_diameter_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="50dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="@string/diameter_hint"
+            android:layout_below="@+id/adddb_add_coin_diameter_textview"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/adddb_add_coin_weight_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/adddb_add_diameter_edittext"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:text="@string/coins_weight_title"
+            android:textStyle="bold"
+            android:textSize="21sp"/>
+
+        <EditText
+            android:id="@+id/adddb_add_weight_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="50dp"
+            android:ems="10"
+            android:hint="@string/weight_hint"
+            android:layout_below="@+id/adddb_add_coin_weight_textview"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/adddb_add_coin_edge_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/adddb_add_weight_edittext"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:text="@string/coins_edge_title"
+            android:textStyle="bold"
+            android:textSize="21sp"/>
+
+        <EditText
+            android:id="@+id/adddb_add_edge_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="50dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="@string/edge_hint"
+            android:layout_below="@+id/adddb_add_coin_edge_textview"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/adddb_add_coin_imgurl_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/adddb_add_edge_edittext"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:text="@string/coins_img_title"
+            android:textStyle="bold"
+            android:textSize="21sp"/>
+
+        <EditText
+            android:id="@+id/adddb_add_imgurl_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="50dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="@string/imgurl_hint"
+            android:layout_below="@+id/adddb_add_coin_imgurl_textview"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/adddb_add_db_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/adddb_add_imgurl_edittext"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="@string/add"
+            android:textSize="18sp"
+            android:background="@drawable/custom_button"
+            android:textColor="#ffffff"/>
+
+        <Button
+            android:id="@+id/adddb_preference_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/adddb_add_db_button"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="@string/usepref"
+            android:textSize="18sp"
+            android:background="@drawable/custom_button_grey"
+            android:textColor="#ffffff"
+            android:textAllCaps="false"
+            android:layout_marginStart="100dp"
+            android:layout_marginEnd="100dp"/>
+
+        <Button
+            android:id="@+id/adddb_reset_db_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/adddb_preference_button"
+            android:layout_marginTop="10dp"
+            android:text="@string/erase"
+            android:textSize="18sp"
+            android:background="@drawable/custom_button_grey"
+            android:textColor="#ffffff"
+            android:textAllCaps="false"
+            android:layout_marginStart="100dp"
+            android:layout_marginEnd="100dp"/>
+        <Button
+            android:id="@+id/adddb_cancel_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/adddb_reset_db_button"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="30dp"
+            android:text="@string/cancel"
+            android:textSize="18sp"
+            android:background="@drawable/custom_button_grey"
+            android:textColor="#ffffff"
+            android:textAllCaps="false"
+            android:layout_marginStart="100dp"
+            android:layout_marginEnd="100dp"/>
+
+    </RelativeLayout>
+</ScrollView>

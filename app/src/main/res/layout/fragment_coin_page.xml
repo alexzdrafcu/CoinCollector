@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".ui.coins.CoinPageFragment">
+
+    <ImageView
+        android:id="@+id/each_coin_imageview"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:contentDescription="@string/coins_name_title"
+        app:srcCompat="@drawable/moneda_10bani_2005" />
+
+    <TextView
+        android:id="@+id/each_title_coin_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="5dp"
+        android:layout_below="@id/each_coin_imageview"
+        android:text="@string/coin_hint"
+        android:textSize="38sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/each_title_material_coin_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/each_title_coin_textview"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:text="@string/coins_material_title"
+        android:textStyle="bold"
+        android:textSize="21sp"/>
+
+    <EditText
+        android:id="@+id/each_material_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="@string/material_hint"
+        android:layout_below="@+id/each_title_material_coin_textview"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/each_title_diameter_coin_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/each_material_edittext"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:text="@string/coins_diameter_title"
+        android:textStyle="bold"
+        android:textSize="21sp"/>
+
+    <EditText
+        android:id="@+id/each_diameter_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="@string/diameter_hint"
+        android:layout_below="@+id/each_title_diameter_coin_textview"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/each_title_weight_coin_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/each_diameter_edittext"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:text="@string/coins_weight_title"
+        android:textStyle="bold"
+        android:textSize="21sp"/>
+
+    <EditText
+        android:id="@+id/each_weight_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:ems="10"
+        android:hint="@string/weight_hint"
+        android:layout_below="@+id/each_title_weight_coin_textview"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/each_title_edge_coin_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/each_weight_edittext"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:text="@string/coins_edge_title"
+        android:textStyle="bold"
+        android:textSize="21sp"/>
+
+    <EditText
+        android:id="@+id/each_edge_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="@string/edge_hint"
+        android:layout_below="@+id/each_title_edge_coin_textview"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/each_update_delete_button_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/each_edge_edittext">
+    <Button
+        android:id="@+id/each_update_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/each_edge_edittext"
+        android:layout_centerHorizontal="true"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp"
+        android:textSize="18sp"
+        android:background="@drawable/custom_button_grey"
+        android:textColor="#ffffff"
+        android:textAllCaps="false"
+        android:text="@string/update" />
+
+    <Button
+        android:id="@+id/each_delete_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/each_edge_edittext"
+        android:layout_centerHorizontal="true"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp"
+        android:textSize="18sp"
+        android:background="@drawable/custom_button_grey"
+        android:textColor="#ffffff"
+        android:textAllCaps="false"
+        android:text="@string/delete" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <Button
+        android:id="@+id/each_add_to_wallet_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/each_update_delete_button_layout"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginEnd="100dp"
+        android:textSize="18sp"
+        android:background="@drawable/custom_button"
+        android:textColor="#ffffff"
+        android:textAllCaps="false"
+        android:text="@string/button_add_to_wallet" />
+    <Button
+        android:id="@+id/each_back_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/each_add_to_wallet_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="50dp"
+        android:textSize="18sp"
+        android:background="@drawable/custom_button_grey"
+        android:textColor="#ffffff"
+        android:textAllCaps="false"
+        android:layout_marginStart="100dp"
+        android:layout_marginEnd="100dp"
+        android:text="@string/button_back" />
+
+</RelativeLayout>
+</ScrollView>

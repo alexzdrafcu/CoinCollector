@@ -1,0 +1,97 @@
+<resources>
+    <string name="app_name">CoinCollector</string>
+    <string name="title_wallet">Wallet</string>
+    <string name="title_coins">Coins</string>
+    <string name="title_search">Trending</string>
+    <string name="title_whishlist">Profile</string>
+    <string name="coins_name_title">Coin</string>
+    <string name="coins_material_title">Material:</string>
+    <string name="coins_diameter_title">Diameter:</string>
+    <string name="coins_weight_title">Weight:</string>
+    <string name="coins_edge_title">Edge:</string>
+    <string name="coins_img_title">ImgUrl:</string>
+    <string name="coins_an_title">Year:</string>
+    <string name="coins_valoare_title">Nominal Value:</string>
+    <string name="coins_detalii_title">Details:</string>
+    <string name="coins_lastact_title">Last update at:</string>
+    <string name="coins_email_title">Email:</string>
+    <string name="button_back">Back</string>
+    <string name="update">Update</string>
+    <string name="delete">Delete</string>
+    <string name="button_add_to_wallet">Add to wallet</string>
+    <string name="button_remove_from_whishlist">STERGE DIN WHISHLIST</string>
+    <string name="title_add_wallet">Adaugă o monedă</string>
+    <string name="moneda">Monedă</string>
+    <string name="logo">Logo</string>
+    <string name="login">Log In</string>
+    <string name="logout">Log Out</string>
+    <string name="register">Register</string>
+    <string name="email_hint">email@stud.ase.ro</string>
+    <string name="password_hint">password</string>
+    <string name="name_hint">Name</string>
+    <string name="coin_hint">ex: 10 bani</string>
+    <string name="material_hint">ex: Copper</string>
+    <string name="diameter_hint">ex: 16.75mm</string>
+    <string name="weight_hint">ex: 2.4g</string>
+    <string name="edge_hint">ex: Smooth</string>
+    <string name="imgurl_hint">ex: www.google.com/imgurl</string>
+    <string name="add">Add</string>
+    <string name="erase">Erase Database</string>
+    <string name="reset">Reset Database</string>
+    <string name="cancel">Cancel</string>
+    <string name="pret">PRICE</string>
+    <string name="eur">EUR</string>
+    <string name="pret3000">3000</string>
+    <string name="year">2020</string>
+    <string name="emptywallet">Your Wallet is empty.</string>
+    <string name="hello">Hello,</string>
+    <string name="changepass">Change password</string>
+    <string name="newpass">New Password</string>
+    <string name="renewpass">Re-Type New Password</string>
+    <string name="addpref">Save coin</string>
+    <string name="usepref">Saved coin</string>
+
+
+    <string-array name="coins">
+        <item>1 ban</item>
+        <item>5 bani</item>
+        <item>10 bani</item>
+        <item>50 bani</item>
+    </string-array>
+
+    <string-array name="material">
+        <item>brass plated steel</item>
+        <item>copper plated steel</item>
+        <item>nickel plated steel</item>
+        <item>brass</item>
+    </string-array>
+
+    <string-array name="diameter">
+        <item>16.75mm</item>
+        <item>18.25mm</item>
+        <item>20.5mm</item>
+        <item>23.75mm</item>
+    </string-array>
+
+    <string-array name="weight">
+        <item>2.4g</item>
+        <item>2.78g</item>
+        <item>4g</item>
+        <item>6.1g</item>
+    </string-array>
+
+    <string-array name="edge">
+        <item>smooth</item>
+        <item>ridged</item>
+        <item>3 groups of ridges</item>
+        <item>inscripted ROMANIA</item>
+    </string-array>
+    <string-array name="imgurls">
+        <item>https://i.colnect.net/f/2728/564/1-Ban.jpg</item>
+        <item>https://www.leftovercurrency.com/app/uploads/2017/04/5-bani-coin-romania-obverse-1.jpg</item>
+        <item>https://www.leftovercurrency.com/app/uploads/2017/04/10-bani-coin-romania-obverse-1.jpg</item>
+        <item>https://cdn.shopify.com/s/files/1/0938/5674/products/ae919745fb450ee2d1facb99e1f06d1f.jpg?v=1515727924</item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

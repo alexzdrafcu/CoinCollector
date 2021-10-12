@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "624691271772",
+    "project_id": "coincollector-e4d52",
+    "storage_bucket": "coincollector-e4d52.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:624691271772:android:fbe91fc5e38300fc60ae99",
+        "android_client_info": {
+          "package_name": "com.example.coincollector"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "624691271772-g1d1pd05un3pnaroncalcqoc5kvorcer.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDtMGMnaTlxlb2PWZ1dBhIyn_uX0EpdN-U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "624691271772-g1d1pd05un3pnaroncalcqoc5kvorcer.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

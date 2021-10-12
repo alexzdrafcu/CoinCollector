@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".ui.profile.ProfileFragment">
+
+        <ImageView
+            android:id="@+id/whishlist_profile_imageview"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            android:contentDescription="coins_name_title"
+            app:srcCompat="@drawable/userimg" />
+
+        <TextView
+            android:id="@+id/whishlist_hello_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            android:layout_below="@id/whishlist_profile_imageview"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp"
+            android:text="@string/hello"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/whishlist_numeprenume_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/whishlist_hello_textview"
+            android:layout_marginTop="2dp"
+            android:layout_gravity="center"
+            android:text="@string/name_hint"
+            android:textStyle="italic"
+            android:textSize="23sp"
+            android:layout_marginBottom="20dp"/>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/whishlist_email_layout_textview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/whishlist_numeprenume_textview"
+            android:gravity="center">
+            <TextView
+                android:id="@+id/whishlist_title_email_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="3dp"
+                android:gravity="center"
+                android:text="@string/coins_email_title"
+                android:textStyle="bold"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/whishlist_email_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/detailed_title_pret_textview"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="3dp"
+                android:gravity="center"
+                android:text="@string/email_hint"
+                android:textSize="20sp"/>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <TextView
+            android:id="@+id/whishlist_change_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/whishlist_email_layout_textview"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:text="@string/changepass"
+            android:textStyle="bold"
+            android:textSize="21sp"/>
+
+        <EditText
+            android:id="@+id/whishlist_password_editText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="60dp"
+            android:layout_marginEnd="60dp"
+            android:layout_marginTop="15dp"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:hint="@string/newpass"
+            android:layout_below="@+id/whishlist_change_textview"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/whishlist_repassword_editText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="60dp"
+            android:layout_marginEnd="60dp"
+            android:layout_marginTop="10dp"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:hint="@string/renewpass"
+            android:layout_below="@+id/whishlist_password_editText"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/whishlist_change_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/changepass"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/whishlist_repassword_editText"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="100dp"
+            android:layout_marginEnd="100dp"
+            android:textSize="18sp"
+            android:background="@drawable/custom_button"
+            android:textColor="#ffffff"
+            />
+
+
+
+
+        <Button
+            android:id="@+id/whishlist_logOut_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/logout"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/whishlist_change_button"
+            android:layout_marginTop="9dp"
+            android:layout_marginBottom="30dp"
+            android:layout_marginStart="100dp"
+            android:layout_marginEnd="100dp"
+            android:textSize="18sp"
+            android:background="@drawable/custom_button_grey"
+            android:textColor="#ffffff"
+            />
+
+
+    </RelativeLayout>
+</ScrollView>
+
+

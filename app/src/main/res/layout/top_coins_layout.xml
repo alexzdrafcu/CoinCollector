@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:layout_marginHorizontal="10dp">
+    <androidx.cardview.widget.CardView
+        android:layout_marginTop="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="8dp"
+        app:cardBackgroundColor="#F6F6F6">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="14dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <ImageView
+                    android:id="@+id/top_coins_imageview"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginStart="10dp"
+                    app:srcCompat="@drawable/moneda_1ban_2005"
+                    android:contentDescription="@string/coins_name_title" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center">
+
+                <TextView
+                    android:id="@+id/title_top_coins_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="5dp"
+                    android:text="@string/coin_hint"
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/title_year_top_coins_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/title_top_coins_textview"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_gravity="center"
+                    android:text="@string/coins_an_title"
+                    android:textStyle="bold"
+                    android:textSize="15sp"/>
+
+                    <TextView
+                        android:id="@+id/year_top_coins_textview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@+id/title_year_top_coins_textview"
+                        android:layout_below="@+id/title_top_coins_textview"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="3dp"
+                        android:layout_gravity="center"
+                        android:text="@string/year"
+                        android:textSize="15sp"/>
+
+                    <TextView
+                        android:id="@+id/title_material_top_coins_textview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/title_year_top_coins_textview"
+                        android:layout_marginStart="40dp"
+                        android:layout_marginTop="3dp"
+                        android:layout_gravity="center"
+                        android:text="@string/coins_material_title"
+                        android:textStyle="bold"
+                        android:textSize="15sp"/>
+
+                    <TextView
+                        android:id="@+id/material_top_coins_textview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@+id/title_material_top_coins_textview"
+                        android:layout_below="@+id/title_year_top_coins_textview"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="3dp"
+                        android:layout_gravity="center"
+                        android:text="@string/material_hint"
+                        android:textSize="15sp"/>
+
+                    <TextView
+                    android:id="@+id/title_pret_top_coins_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/title_material_top_coins_textview"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_gravity="center"
+                    android:text="@string/pret"
+                    android:textStyle="bold"
+                    android:textSize="18sp"/>
+
+                    <TextView
+                        android:id="@+id/pret_top_coins_textview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@+id/title_pret_top_coins_textview"
+                        android:layout_below="@+id/title_material_top_coins_textview"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_gravity="center"
+                        android:text="@string/pret3000"
+                        android:textSize="18sp"/>
+
+                    <TextView
+                        android:id="@+id/moneda_top_coins_textview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@+id/pret_top_coins_textview"
+                        android:layout_below="@+id/title_material_top_coins_textview"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_gravity="center"
+                        android:text="@string/eur"
+                        android:textStyle="bold"
+                        android:textSize="18sp"/>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/search_details_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="See more detalis"
+                android:background="@drawable/custom_button_grey"
+                android:textColor="#ffffff"></Button>
+
+        </LinearLayout>
+
+
+
+    </androidx.cardview.widget.CardView>
+   </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_wallet"
+        android:icon="@drawable/ic_baseline_account_balance_wallet_24"
+        android:title="@string/title_wallet" />
+
+    <item
+        android:id="@+id/navigation_coins"
+        android:icon="@drawable/ic_baseline_monetization_on_24"
+        android:title="@string/title_coins" />
+
+    <item
+        android:id="@+id/navigation_search"
+        android:icon="@drawable/ic_baseline_trending_up_24"
+        android:title="@string/title_search" />
+
+    <item
+        android:id="@+id/navigation_whishlist"
+        android:icon="@drawable/ic_baseline_person_24"
+        android:title="@string/title_whishlist" />
+
+
+</menu>
